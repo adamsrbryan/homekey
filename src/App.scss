@@ -190,19 +190,18 @@ html {
 
 .bids-wrapper {
   background-color: #fff;
-  padding-top: 35px;
+  margin-top: 35px;
   
   h2 {
       text-align: center;
   }
 
   .bids {
-    max-width: 90%;
+    max-width: 600px;
     background-color: #fff;
     display:grid;
     grid-template-rows: auto auto;
-    margin: 0 auto;
-    overflow-y: hidden;
+    margin: 20px auto 0 auto;
 
     .row {
       display: flex;
@@ -211,22 +210,117 @@ html {
       height: 40px;
     }
 
+    .row:nth-child(odd) {
+      background-color: #fff;
+    }
+
+    .row:nth-child(even) {
+      background-color: #ececec;
+
+      .box {
+        border-right: 1px solid #fff;  
+      }
+    }
+
+    .row p{
+      background-color: #fff;
+      padding-top: 13px;
+    }
+    
     .header-row .box {
       justify-content: center;
       font-weight: 600;
-      font-size: 15px;
+      font-size: 17px;
     }
 
     .box{
       color: #000;
       display: flex;
       align-items: center;
-      font-size: 13px;
+      font-size: 15px;
       white-space: nowrap;
       flex: 1;
-      width: 200px;
-      outline: 1px solid black;
+      width: 150px;
+      border-right: 1px solid #ececec;
       padding: 5px;
+      justify-content: center;
+    }
+
+    .box:last-child {
+      justify-content: left;
+      background: #fff;
+      border-right: none;
+    }
+
+    .box:nth-child(3) {
+      border-right: none;
+    }
+
+    .disclaimer {
+      font-size: 13px;
+      margin: 5px;
     }
   }
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
+
+.offer-modal {
+  border: 1px solid rgb(204, 204, 204);
+  background: rgba(255, 255, 255, 0.8);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  width: 800px;
+  box-shadow: 2px 3px 20px rgba(51, 51, 51, 0.4);
+
+  h2 {
+    text-align: center;
+    border-bottom: 1px solid #888;
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 5px;
+  }
+
+  .modal-row {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+
+    h4 {
+      border-right: 1px solid #888;
+      border-bottom: 1px solid #888;
+      padding-right: 4px;
+      width: max-content;
+    }
+
+    p {
+      margin-top: 5px;
+    }
+  }
+}
+
+body > div:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body > div:nth-child(4) > div > div > div:nth-child(2) > div:nth-child(3) > p, body > div:nth-child(4) > div > div > div:nth-child(3) > div:nth-child(2) > p {
+  text-align: right;
 }
