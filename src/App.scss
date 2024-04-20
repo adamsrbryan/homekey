@@ -3,7 +3,7 @@
   margin: 0;
   max-width: 100%;
   box-sizing: border-box;
-  text-align: center;
+  text-align: left;
 }
 
 html {
@@ -40,6 +40,7 @@ html {
 //start new styles
 .header {
   position: absolute;
+  z-index: 10;
 
   .buttons {
     display: flex;
@@ -70,9 +71,19 @@ html {
   }
 }
 
+.background-image {
+  width: 100%;
+  min-width: 800px;
+  height: 800px;
+  background-image: url("./assets/house-image-1.jpg");
+  background-size: cover;
+  position: absolute;
+}
+
 .hero {
   .property-image-1 {
     width: 100%;
+    min-width: 800px;
     height: 200px;
     background-image: url("./assets/house-image-1.jpg");
     background-size: cover;
@@ -81,107 +92,116 @@ html {
 
 .listing-wrapper {
   position: relative;
+  background-color: #fff;
 }
 
 .listing {
-  position: absolute;
-  display: flex;
-  top: -65px;
   width: 100%;
-  justify-content: center;
 
   .property-info-wrapper {
-    max-width: 700px;
-    min-width: 600px;
-    height: 140px;
-    background: white;
-    z-index: 5;
-    padding: 25px 50px;
     display: flex;
-    justify-content: center;
-    position: relative;
+    justify-content: flex-start;
+    padding: 10px;
 
-    p {
-      position: absolute;
-      top: -18px;
-      left: 2px;
-      font-size: 13px;
-      color: white;
-      cursor: pointer;
+    .property-thumbnail {
+      min-width: 250px;
+      height: 150px;
+      background-image: url("./assets/house-image-1.jpg");
+      background-size: cover;
     }
 
-    h1 {
-      white-space: nowrap;
-    }
+    .property-info {
+      margin-left: 10px;
 
-    .listing-price h1 {
-      color: rgb(207, 58, 58);
-      /*text-align: left;*/
-      padding-top: 15px;
-    }
-  
-    .bid {
-      color: white;
-      background-color: #333;
-      width: 250px;
-      height: 60px;
-      transition: all .4s ease;
-      border: 3px solid white;
-      outline: none;
-      position: absolute;
-      bottom: 50px;
-      left: 35%;
-    }
+      h1 {
+        white-space: nowrap;
+      }
 
-    .bid:before {
-      content: "";
-      position: absolute;
-      width: 50px;
-      top: 50%;
-      left: -30px;
-      background: #333;
-      height: 1px;
-      transform: scaleY(1.1);
-    }
-
-    .bid:after {
-      content: "";
-      top: 50%;
-      position: absolute;
-      width: 50px;
-      right: -30px;
-      background: #333;
-      height: 1px;
-      transform: scaleY(1.1);
-    }
-  
-      .bid:hover {
-        color: #001F3F;
-        background-color: #fff;
-        border: 1px solid black;
+      .price {
+        color: rgb(207, 58, 58);
+        margin-top: 10px;
+      }
     }
   }
 }
 
-.filler {
-  width: 100%;
-  height: 75px;
-  background-color: #333;;
-  position: absolute;
-  bottom: -208px;
+.details {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+  margin-top: 5px;
+
+  .icon {
+    display: flex;
+  }
+
+  .icon-bed {
+    background-image: url("./assets/icon-bed.png");
+    background-size: cover;
+    height: 15px;
+    width: 25px;
+    margin-top: 7px;
+  }
+
+  .icon-bath {
+    background-image: url("./assets/icon-bath.png");
+    background-size: cover;
+    height: 21px;
+    width: 21px;
+    margin-top: 3px;
+  }
+
+  .icon-sqft {
+    background-image: url("./assets/icon-sqft.png");
+    background-size: cover;
+    height: 21px;
+    width: 21px;
+    margin-top: 6px;
+  }
+
+  p {
+    text-align: left;
+    line-height: 2;
+    padding-left: 5px;
+  }
+}
+
+.user-buttons {
+  button {
+    color: white;
+    background-color: #333;
+    width: 300px;
+    height: 60px;
+    transition: all .4s ease;
+    border: 3px solid white;
+    outline: none;
+  }
+
+  button:hover {
+    color: #001F3F;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+  button:nth-child(1) {
+    top: 290px;
+  }
+}
+
+.filler-text {
+  width: 65%;
+  line-height: 1.5;
+
+  p {
+    text-align: left;
+  }
 }
 
 .bids-wrapper {
-  width: 100%;
-  height: 550px;
-  background-color: #333;
-  display: flex;
-  justify-content: center;
+  background-color: #fff;
 
   .bids {
     width: 100%;
-    background-color: #fff;
-    height: 400px;
-    margin-top: 75px;
+    height: 200px;
   }
 }
