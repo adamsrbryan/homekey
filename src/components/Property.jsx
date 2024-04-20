@@ -43,6 +43,10 @@ function Property({address, location, beds, baths, sqft, price}) {
                 <p>Excellent</p>
             </div>
             <div className='info-cat'>
+                <h3>Days on Market</h3>
+                <p>89</p>
+            </div>
+            <div className='info-cat'>
                 <h3>Included in Sale</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
             </div>
@@ -61,9 +65,12 @@ function Property({address, location, beds, baths, sqft, price}) {
             <button className='view-listing'>VIEW LISTING</button>
         </section>
         <section className='bids-wrapper'>
-            <canvas className='background-image' />
+            <div className='background-image' />
             <div className='bid-section'>
-                <h2>CURRENT OFFERS</h2>
+                <span>
+                    <h2>CURRENT</h2>
+                    <h2>OFFERS</h2>
+                </span>
                 <div className='bids'>
                     <div className="row header-row">
                         <div className="box">Bidder</div>
@@ -144,10 +151,35 @@ function Property({address, location, beds, baths, sqft, price}) {
                             ranking={"6"}
                         />
                     </div>
+                    <div className="row">
+                        <Offer 
+                            bidderName={"Ryan Walter"}
+                            offerAmmount={"$30,200,000"}
+                            contingencies={"NA"}
+                            loanApproval={"Highly likely"}
+                            closeDate={"June 2nd, 2024"}
+                            deedType={"General warranty deed"}
+                            offerExpiration={"May 13th, 2024"}
+                            ranking={"7"}
+                        />
+                    </div>
+                    <div className="row">
+                        <Offer 
+                            bidderName={"Justice Ngo"}
+                            offerAmmount={"$35,700,000"}
+                            contingencies={"NA"}
+                            loanApproval={"Not likely"}
+                            closeDate={"June 9th, 2024"}
+                            deedType={"General warranty deed"}
+                            offerExpiration={"May 30th, 2024"}
+                            ranking={"8"}
+                        />
+                    </div>
                     <p className='disclaimer'>*Offers are sorted based on our recommendation model</p>
                 </div>    
             </div>
         </section>
+        <section className='filler' />
     </>
     )
 };

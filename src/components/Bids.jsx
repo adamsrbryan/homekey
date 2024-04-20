@@ -35,7 +35,7 @@ function Offer({bidderName, offerAmmount, contingencies, loanApproval, closeDate
                     </div>
                     <div className='modal-info'>
                         <h4>Offer</h4>
-                        <p>{offerAmmount}</p>
+                        <p className='offer-ammount'>{offerAmmount}</p>
                     </div>
                     <div className='modal-info'>
                         <h4>Possibility of loan</h4>
@@ -66,6 +66,11 @@ function Offer({bidderName, offerAmmount, contingencies, loanApproval, closeDate
                         <h4>Comment left by bidder</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu scelerisque felis imperdiet proin. Amet dictum sit amet justo donec enim diam vulputate.</p>
                     </div>
+                </div>
+
+                <div className='credit-score-wrapper'>
+                    <div className='credit-score' />
+                    <h4>Buyer's credit history</h4>
                 </div>
             </ReactModal>
             <a className="box" onClick={showModal}>Expand details</a>
