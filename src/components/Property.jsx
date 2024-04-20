@@ -2,24 +2,24 @@ import React, { useState } from 'react';
 import '../App.scss'
 
 function Property({address, location, beds, baths, sqft, price}) {
-    const [propertyImage, setPropertyImage] = useState('property-image-1');
+    const [propertyImage, setPropertyImage] = useState('box property-image-1');
 
     const changeImageRight = () => {
-        if(propertyImage == "property-image-1")
-            setPropertyImage("property-image-2")
-        if(propertyImage == "property-image-2")
-            setPropertyImage("property-image-3")
-        if(propertyImage == "property-image-3")
-            setPropertyImage("property-image-1")
+        if(propertyImage == "box property-image-1")
+            setPropertyImage("box property-image-2")
+        if(propertyImage == "box property-image-2")
+            setPropertyImage("box property-image-3")
+        if(propertyImage == "box property-image-3")
+            setPropertyImage("box property-image-1")
     }
 
     const changeImageLeft = () => {
-        if(propertyImage == "property-image-1")
-            setPropertyImage("property-image-3")
-        if(propertyImage == "property-image-2")
-            setPropertyImage("property-image-1")
-        if(propertyImage == "property-image-3")
-            setPropertyImage("property-image-2")
+        if(propertyImage == "box property-image-1")
+            setPropertyImage("box property-image-3")
+        if(propertyImage == "box property-image-2")
+            setPropertyImage("box property-image-1")
+        if(propertyImage == "box property-image-3")
+            setPropertyImage("box property-image-2")
     }
 
     const changeImage = (e) => {
