@@ -73,45 +73,9 @@ html {
 .hero {
   .property-image-1 {
     width: 100%;
-    height: 600px;
+    height: 200px;
     background-image: url("./assets/house-image-1.jpg");
     background-size: cover;
-  }
-
-  .property-image-2 {
-    width: 100%;
-    height: 600px;
-    background-image: url("./assets/house-image-2.jpg");
-    background-size: cover;
-  }
-
-  .property-image-3 {
-    width: 100%;
-    height: 600px;
-    background-image: url("./assets/house-image-3.jpg");
-    background-size: cover;
-  }
-
-  .arrow {
-    position: absolute;
-    z-index: 10;
-    top: 250px;
-    background-size: cover;
-    cursor: pointer;
-  }
-
-  .arrow-left {
-    background-image: url("./assets/left-arrow.png");
-    width: 14px;
-    height: 41px;
-    left: 5px;
-  }
-
-  .arrow-right {
-    background-image: url("./assets/right-arrow.png");
-    width: 16px;
-    height: 30px;
-    right: 5px;
   }
 }
 
@@ -126,86 +90,25 @@ html {
   width: 100%;
   justify-content: center;
 
-  .gallery-wrapper {
-    height: 537px;
-    width: 400px;
-    z-index: 5;
-    background-color:#fff;
-    margin-top: 36px;
-    
-    .user-buttons {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      margin: 25px 2px;
-
-      button {
-        color: white;
-        background-color: #333;
-        width: 100%;
-        height: 60px;
-        margin-top: 10px;
-      
-        transition: all .4s ease;
-          border: 1px solid white;
-          outline: none;
-        }
-
-        button:hover {
-          color: #001F3F;
-          background-color: #fff;
-          border: 1px solid black;
-      }
-  }
-  }
-
-  .gallery {
-    width: 400px;
-    height: 300px;
-    background-color:#fff;
-    display:grid;
-    grid-template-columns: 200px 200px;
-    grid-row: auto auto;
-
-    .box {
-      background-color:#333;
-      margin: 2px;
-      color:#fff;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      font-family:sans-serif;
-      background-size: cover;
-    }
-
-    .box:hover {
-      transition: all .1s ease;
-      outline: 2px solid rgb(207, 58, 58);
-    }
-
-    .box:nth-child(1) {
-      background-image: url("./assets/house-image-1.jpg");
-    }
-
-    .box:nth-child(2) {
-      background-image: url("./assets/house-image-2.jpg");
-    }
-
-    .box:nth-child(3) {
-      background-image: url("./assets/house-image-3.jpg");
-    }
-  }
-
   .property-info-wrapper {
-    width: 60%;
+    max-width: 700px;
     min-width: 600px;
-    height: 500px;
+    height: 140px;
     background: white;
     z-index: 5;
     padding: 25px 50px;
     display: flex;
     justify-content: center;
     position: relative;
+
+    p {
+      position: absolute;
+      top: -18px;
+      left: 2px;
+      font-size: 13px;
+      color: white;
+      cursor: pointer;
+    }
 
     h1 {
       white-space: nowrap;
@@ -217,79 +120,6 @@ html {
       padding-top: 15px;
     }
   
-    .details-wrapper {
-      display: flex;
-      justify-content:space-evenly;
-      padding-top: 25px;
-
-      .details {
-        .icon {
-          display: flex;
-        }
-  
-        .icon-bed {
-          background-image: url("./assets/icon-bed.png");
-          background-size: cover;
-          height: 15px;
-          width: 25px;
-          margin-top: 7px;
-        }
-  
-        .icon-bath {
-          background-image: url("./assets/icon-bath.png");
-          background-size: cover;
-          height: 21px;
-          width: 21px;
-          margin-top: 3px;
-        }
-  
-        .icon-sqft {
-          background-image: url("./assets/icon-sqft.png");
-          background-size: cover;
-          height: 21px;
-          width: 21px;
-          margin-top: 6px;
-        }
-  
-        p {
-          text-align: left;
-          line-height: 2;
-          padding-left: 5px;
-        }
-      }
-
-      .user-buttons {
-        button {
-          color: white;
-          background-color: #333;
-          width: 300px;
-          height: 60px;
-          transition: all .4s ease;
-          border: 3px solid white;
-          outline: none;
-        }
-
-        button:hover {
-          color: #001F3F;
-          background-color: #fff;
-          border: 1px solid black;
-      }
-
-        button:nth-child(1) {
-          top: 290px;
-        }
-      }
-
-      .filler-text {
-        width: 65%;
-        line-height: 1.5;
-      
-        p {
-          text-align: left;
-        }
-      }
-    }
-
     .bid {
       color: white;
       background-color: #333;
@@ -339,4 +169,19 @@ html {
   background-color: #333;;
   position: absolute;
   bottom: -208px;
+}
+
+.bids-wrapper {
+  width: 100%;
+  height: 550px;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+
+  .bids {
+    width: 100%;
+    background-color: #fff;
+    height: 400px;
+    margin-top: 75px;
+  }
 }
