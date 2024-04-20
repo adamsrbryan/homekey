@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./Vite + React_files/client"></script>
+
+    
+    <link rel="icon" type="image/svg+xml" href="http://localhost:5173/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite + React</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/adams/Projects/ai-realtor/ai-realtor/src/App.scss">* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  background: black;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(100, 108, 255, 0.6666666667));
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6666666667));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header {
+  position: absolute;
+}
+.header .buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 35px;
+  min-width: 90%;
+}
+.header .buttons a {
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  padding: 0 85px;
+}
+@media only screen and (max-width: 780px) {
+  .header .buttons a {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .header .buttons a {
+    padding: 0 70px;
+  }
+}
+.header .buttons > a:nth-child(1) {
+  border-left: none;
+}
+
+.hero .property-image {
+  width: 100%;
+  height: 600px;
+  background-image: url("/src/assets/house-image-1.jpg");
+  background-size: cover;
+}
+.hero .arrow {
+  position: absolute;
+  z-index: 10;
+  top: 250px;
+  background-size: cover;
+}
+.hero .arrow-left {
+  background-image: url("/src/assets/left-arrow.png");
+  width: 14px;
+  height: 41px;
+  left: 5px;
+}
+.hero .arrow-right {
+  background-image: url("/src/assets/right-arrow.png");
+  width: 16px;
+  height: 30px;
+  right: 5px;
+}
+
+.listing {
+  position: relative;
+}
+.listing .gallery-wrapper {
+  height: 500px;
+  background-color: white;
+  width: 400px;
+  position: absolute;
+  z-index: 5;
+  top: -50px;
+  left: 625px;
+  background-color: #fff;
+}
+.listing .gallery-wrapper .user-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px 2px;
+}
+.listing .gallery-wrapper .user-buttons button {
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+}
+.listing .gallery {
+  width: 400px;
+  height: 300px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-row: auto auto;
+}
+.listing .gallery .box {
+  background-color: #333;
+  margin: 2px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-size: cover;
+}
+.listing .gallery .box:hover {
+  outline: 1.5px solid rgba(255, 46, 46, 0.5);
+}
+.listing .gallery .box:nth-child(1) {
+  background-image: url("/src/assets/house-image-1.jpg");
+}
+.listing .gallery .box:nth-child(2) {
+  background-image: url("/src/assets/house-image-2.jpg");
+}
+.listing .gallery .box:nth-child(3) {
+  background-image: url("/src/assets/house-image-3.jpg");
+}
+.listing .property-info-wrapper {
+  width: 600px;
+  height: 500px;
+  background: white;
+  position: absolute;
+  z-index: 5;
+  top: -75px;
+  left: 25px;
+  padding: 25px 70px;
+  display: flex;
+  justify-content: center;
+}
+.listing .property-info-wrapper h1 {
+  white-space: nowrap;
+}
+.listing .property-info-wrapper .listing-price h1 {
+  color: rgb(207, 58, 58);
+  /*text-align: left;*/
+  padding-top: 15px;
+}
+.listing .property-info-wrapper .details-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.listing .property-info-wrapper .details-wrapper .details .icon {
+  display: flex;
+}
+.listing .property-info-wrapper .details-wrapper .details .icon-bed {
+  background-image: url("/src/assets/icon-bed.png");
+  background-size: cover;
+  height: 15px;
+  width: 25px;
+  margin-top: 7px;
+}
+.listing .property-info-wrapper .details-wrapper .details .icon-bath {
+  background-image: url("/src/assets/icon-bath.png");
+  background-size: cover;
+  height: 21px;
+  width: 21px;
+  margin-top: 3px;
+}
+.listing .property-info-wrapper .details-wrapper .details .icon-sqft {
+  background-image: url("/src/assets/icon-sqft.png");
+  background-size: cover;
+  height: 21px;
+  width: 21px;
+  margin-top: 6px;
+}
+.listing .property-info-wrapper .details-wrapper .details p {
+  text-align: left;
+  line-height: 2;
+  padding-left: 5px;
+}
+.listing .property-info-wrapper .details-wrapper .user-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.listing .property-info-wrapper .details-wrapper .user-buttons button {
+  color: white;
+  background-color: gray;
+  width: 300px;
+  height: 60px;
+  position: absolute;
+  right: 50px;
+}
+.listing .property-info-wrapper .details-wrapper .user-buttons button:nth-child(1) {
+  top: 290px;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/adams/Projects/ai-realtor/ai-realtor/src/index.scss">:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: rgba(255, 46, 46, 0.5);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: black;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: rgba(255, 46, 46, 0.5);
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}</style></head>
+  <body>
+    <div id="root"><div class="header"><nav class="buttons"><a href="http://localhost:5173/">Our Properties</a><a href="http://localhost:5173/">Buyers</a><a href="http://localhost:5173/">Sellers</a><a href="http://localhost:5173/">About Us</a><a href="http://localhost:5173/">Contact Us</a></nav></div><section class="hero"><canvas class="property-image"></canvas><div class="arrow arrow-left"></div><div class="arrow arrow-right"></div></section><section class="listing"><div class="gallery-wrapper"><div class="gallery"><div class="box"></div><div class="box"></div><div class="box"></div><div class="box">+</div></div><div class="user-buttons"><button>MORE DETAILS</button><button>MESSAGE SELLER</button></div></div><div class="property-info-wrapper"><div class="property-info"><h1>8408 Hillside Ave.</h1><h2>Los Angeles, CA 90069</h2><div class="listing-price"><h1>$39,975,000</h1></div><div class="details-wrapper"><div class="details"><div class="icon"><div class="icon-bed"></div><p>5 beds</p></div><div class="icon"><div class="icon-bath"></div><p>9 baths</p></div><div class="icon"><div class="icon-sqft"></div><p>20,058 sq. ft.</p></div></div><div class="user-buttons"></div></div></div></div></section></div>
+    <script type="module" src="./Vite + React_files/main.jsx"></script>
+  
+
+</body></html>

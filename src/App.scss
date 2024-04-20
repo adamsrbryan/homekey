@@ -1,0 +1,342 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+html {
+  margin: 0 auto;
+  height: 100vh;
+  background: white;
+  color: black;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//start new styles
+.header {
+  position: absolute;
+
+  .buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35px;
+    min-width: 90%;
+
+    a {
+      border-left: 1px solid rgba(255, 255, 255, 0.5);
+      display: inline-block;
+      vertical-align: middle;
+      white-space: nowrap;
+      padding: 0 85px;
+
+      @media only screen and (max-width: 780px) {
+        padding: 0 30px;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        padding: 0 70px;
+      }
+    }
+
+    > a:nth-child(1) {
+      border-left: none;
+    }
+  }
+}
+
+.hero {
+  .property-image-1 {
+    width: 100%;
+    height: 600px;
+    background-image: url("./assets/house-image-1.jpg");
+    background-size: cover;
+  }
+
+  .property-image-2 {
+    width: 100%;
+    height: 600px;
+    background-image: url("./assets/house-image-2.jpg");
+    background-size: cover;
+  }
+
+  .property-image-3 {
+    width: 100%;
+    height: 600px;
+    background-image: url("./assets/house-image-3.jpg");
+    background-size: cover;
+  }
+
+  .arrow {
+    position: absolute;
+    z-index: 10;
+    top: 250px;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    background-image: url("./assets/left-arrow.png");
+    width: 14px;
+    height: 41px;
+    left: 5px;
+  }
+
+  .arrow-right {
+    background-image: url("./assets/right-arrow.png");
+    width: 16px;
+    height: 30px;
+    right: 5px;
+  }
+}
+
+.listing-wrapper {
+  position: relative;
+}
+
+.listing {
+  position: absolute;
+  display: flex;
+  top: -65px;
+  width: 100%;
+  justify-content: center;
+
+  .gallery-wrapper {
+    height: 537px;
+    width: 400px;
+    z-index: 5;
+    background-color:#fff;
+    margin-top: 36px;
+    
+    .user-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 25px 2px;
+
+      button {
+        color: white;
+        background-color: #333;
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+      
+        transition: all .4s ease;
+          border: 1px solid white;
+          outline: none;
+        }
+
+        button:hover {
+          color: #001F3F;
+          background-color: #fff;
+          border: 1px solid black;
+      }
+  }
+  }
+
+  .gallery {
+    width: 400px;
+    height: 300px;
+    background-color:#fff;
+    display:grid;
+    grid-template-columns: 200px 200px;
+    grid-row: auto auto;
+
+    .box {
+      background-color:#333;
+      margin: 2px;
+      color:#fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:sans-serif;
+      background-size: cover;
+    }
+
+    .box:hover {
+      transition: all .1s ease;
+      outline: 2px solid rgb(207, 58, 58);
+    }
+
+    .box:nth-child(1) {
+      background-image: url("./assets/house-image-1.jpg");
+    }
+
+    .box:nth-child(2) {
+      background-image: url("./assets/house-image-2.jpg");
+    }
+
+    .box:nth-child(3) {
+      background-image: url("./assets/house-image-3.jpg");
+    }
+  }
+
+  .property-info-wrapper {
+    width: 60%;
+    min-width: 600px;
+    height: 500px;
+    background: white;
+    z-index: 5;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    h1 {
+      white-space: nowrap;
+    }
+
+    .listing-price h1 {
+      color: rgb(207, 58, 58);
+      /*text-align: left;*/
+      padding-top: 15px;
+    }
+  
+    .details-wrapper {
+      display: flex;
+      justify-content:space-evenly;
+      padding-top: 25px;
+
+      .details {
+        .icon {
+          display: flex;
+        }
+  
+        .icon-bed {
+          background-image: url("./assets/icon-bed.png");
+          background-size: cover;
+          height: 15px;
+          width: 25px;
+          margin-top: 7px;
+        }
+  
+        .icon-bath {
+          background-image: url("./assets/icon-bath.png");
+          background-size: cover;
+          height: 21px;
+          width: 21px;
+          margin-top: 3px;
+        }
+  
+        .icon-sqft {
+          background-image: url("./assets/icon-sqft.png");
+          background-size: cover;
+          height: 21px;
+          width: 21px;
+          margin-top: 6px;
+        }
+  
+        p {
+          text-align: left;
+          line-height: 2;
+          padding-left: 5px;
+        }
+      }
+
+      .user-buttons {
+        button {
+          color: white;
+          background-color: #333;
+          width: 300px;
+          height: 60px;
+          transition: all .4s ease;
+          border: 3px solid white;
+          outline: none;
+        }
+
+        button:hover {
+          color: #001F3F;
+          background-color: #fff;
+          border: 1px solid black;
+      }
+
+        button:nth-child(1) {
+          top: 290px;
+        }
+      }
+
+      .filler-text {
+        width: 65%;
+        line-height: 1.5;
+      
+        p {
+          text-align: left;
+        }
+      }
+    }
+
+    .bid {
+      color: white;
+      background-color: #333;
+      width: 250px;
+      height: 60px;
+      transition: all .4s ease;
+      border: 3px solid white;
+      outline: none;
+      position: absolute;
+      bottom: 50px;
+      left: 35%;
+    }
+
+    .bid:before {
+      content: "";
+      position: absolute;
+      width: 50px;
+      top: 50%;
+      left: -30px;
+      background: #333;
+      height: 1px;
+      transform: scaleY(1.1);
+    }
+
+    .bid:after {
+      content: "";
+      top: 50%;
+      position: absolute;
+      width: 50px;
+      right: -30px;
+      background: #333;
+      height: 1px;
+      transform: scaleY(1.1);
+    }
+  
+      .bid:hover {
+        color: #001F3F;
+        background-color: #fff;
+        border: 1px solid black;
+    }
+  }
+}
+
+.filler {
+  width: 100%;
+  height: 75px;
+  background-color: #333;;
+  position: absolute;
+  bottom: -208px;
+}
