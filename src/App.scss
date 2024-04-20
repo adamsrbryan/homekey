@@ -132,6 +132,7 @@ html {
     z-index: 5;
     background-color:#fff;
     margin-top: 36px;
+    margin-left: 10px;
     
     .user-buttons {
       display: flex;
@@ -197,7 +198,7 @@ html {
   }
 
   .property-info-wrapper {
-    width: 60%;
+    max-width: 700px;
     min-width: 600px;
     height: 500px;
     background: white;
