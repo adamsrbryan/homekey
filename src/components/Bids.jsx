@@ -18,10 +18,7 @@ function Offer({bidderName, offerAmmount, contingencies, loanApproval, closeDate
             <p>{ranking})</p>
             <div className="box">{bidderName}</div>
             <div className="box">{offerAmmount}</div>
-            {/*<div class="box">{contingencies}</div>
-            <div class="box">{loanApproval}</div>
             <div class="box">{closeDate}</div>
-    <div class="box">{deedType}</div>*/}
             <div className="box">{offerExpiration}</div>
             <ReactModal 
                 isOpen={show} 
