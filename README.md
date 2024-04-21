@@ -6,10 +6,11 @@ Buyer and seller side of home auction page
 ## Instructions
 
 - [ ] Clone this repository.
-- [ ] cd into the Buyer branch.
+- [ ] cd into the copy of the repository `homekey`.
+- [ ] RUN `git checkout Buyer` to change into the Buyer branch.
 - [ ] RUN `npm install` to retrieve all server-side dependencies.
-- [ ] RUN `npm run dev` to start the React application.
-- [ ] cd into the Seller branch when needed.
+- [ ] RUN `npm run dev` to start the React application. (If having trouble, check node version. Local ran on v20.12.2)
+- [ ] RUN `git checkout Seller` to change into the Seller branch when needed.
 
 ## Functionality
 
